@@ -28,21 +28,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter App'),
-        ),
-        body: const Center(
-          child: Text(
-            "Hello World",
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 25.0,
-            ),
-          ),
-        ));
+    
+    return SafeArea(
+        child:
+            Container(
+              color: Colors.white, 
+              child: const Text("Hello World")
+              )
+              );
   }
 }
