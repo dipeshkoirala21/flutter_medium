@@ -36,18 +36,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Row(
           children: [
-            Expanded(
-                flex: 1,
-                child: Container(
-                  height: 100,
-                  color: Colors.blue,
-                )),
-            Expanded(
-                flex: 1,
-                child: Container(
-                  height: 100,
-                  color: Colors.red,
-                ))
+            Container(
+              height: 100,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 100,
+              color: Colors.red,
+            )
           ],
         ));
   }
