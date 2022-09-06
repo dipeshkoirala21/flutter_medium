@@ -31,22 +31,27 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter App'),
-        ),
-        body: PageView(
-          scrollDirection: Axis.vertical,
-          children: [
-            Container(
+      appBar: AppBar(
+        title: const Text('Flutter App'),
+      ),
+      body: Center(
+        child: Container(
+          width: 300,
+          height: 300,
+          decoration: BoxDecoration(
+            image: const DecorationImage(
+              image: NetworkImage(
+                  'https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80'),
+              fit: BoxFit.cover,
+            ),
+            border: Border.all(
               color: Colors.red,
+              width: 24,
             ),
-            Container(
-              color: Colors.blue,
-            ),
-            Container(
-              color: Colors.green,
-            )
-          ],
-        ));
+            borderRadius: BorderRadius.circular(15),
+          ), 
+        ), 
+      ), //
+    );
   }
 }
