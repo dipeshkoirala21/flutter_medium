@@ -34,12 +34,19 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text('Flutter App'),
         ),
-        body: SizedBox(
-          width: 300,
-          height: 200,
-          child: Container(
-            color: Colors.red,
-          ),
+        body: PageView(
+          scrollDirection: Axis.vertical,
+          children: [
+            Container(
+              color: Colors.red,
+            ),
+            Container(
+              color: Colors.blue,
+            ),
+            Container(
+              color: Colors.green,
+            )
+          ],
         ));
   }
 }
